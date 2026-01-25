@@ -1,0 +1,26 @@
+import os
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+
+def generate_launch_description():
+    pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+    pkg_tb3_gazebo = get_package_share_directory('turtlebot3_gazebo')
+    
+    # Absolute path to the world file
+    world_path = '/home/althaf/Case_Study/tb3-vision-maze-project-main/maze_world.world'
+
+    return LaunchDescription([
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py')
+            ),
+            launch_arguments={'world': world_path}.items(),
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg_tb3_gazebo, 'launch', 'spawn_turtlebot3.launch.py')
+            ),
+        ),
+    ])

@@ -1,0 +1,12 @@
+# Ignore videos
+*.webm
+*.mp4
+
+# ROS build folders
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
