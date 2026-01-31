@@ -12,7 +12,7 @@ The main challenge was the sparse reward problem—the robot wouldn't find the e
 ![Maze Solver Demo](demo_video.webm)
 *(See `demo_video.webm` in the file list for a full successful run)*
 
-## 🚀 Key Featuresdits
+## Key Featuresdits
 This works was done as a Case Study for ROS 2.
 
 *   **Althaf Ahamed (Lead AI Engineer):**
