@@ -10,16 +10,6 @@ Deep Reinforcement Learning navigation system for TurtleBot3 using **ROS 2 Humbl
 
 The robot learns to autonomously solve maze environments using LiDAR perception and continuous velocity control — without classical global planners.
 
----
-
-# Demo
-
-![Demo](assets/demo.gif)
-
-> Place your demo GIF inside an `assets/` folder in the repository and name it `demo.gif`.
-
----
-
 # Overview
 
 This project explores **AI-first navigation**, where a neural network learns motion behaviour directly from sensor observations.
